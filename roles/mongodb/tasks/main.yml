@@ -6,7 +6,7 @@
 
 - name: Installing MongoDB
   ansible.builtin.yum:
-    name: mongod
+    name: mongodb-org
     state: latest
 
 - name: replacing IP in conf file
