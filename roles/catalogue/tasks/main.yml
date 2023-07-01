@@ -6,6 +6,6 @@
 - name: Load schema
   ansible.builtin.import_role:
     name: common
-    tasks_from: mongod-schema
+    tasks_from: mongod-schema.yml
 
 
