@@ -17,6 +17,6 @@
 
 - name: Starting Nginx service
   ansible.builtin.systemd:
-    name: mongodb-org
+    name: mongod
     state: restarted
     enabled: yes
