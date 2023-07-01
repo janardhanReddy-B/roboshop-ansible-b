@@ -9,7 +9,7 @@
     name: mongod
     state: latest
 
-- name: replacing IP in conf filr
+- name: replacing IP in conf file
   ansible.builtin.replace:
     path: /etc/mongod.conf
     regexp: '127.0.0.1'
