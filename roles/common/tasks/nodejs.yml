@@ -12,7 +12,7 @@
     file: pre-app-setup.yml
 
 - name: Installing Nodejs dependcies
-  ansible.builtin.shell: npm insall
+  ansible.builtin.shell: npm install
   args:
     chdir: /app
 
