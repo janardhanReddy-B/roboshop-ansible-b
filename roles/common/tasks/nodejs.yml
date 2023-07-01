@@ -1,0 +1,24 @@
+
+- name: Configuring Nodejs repo
+  ansible.builtin.shell: https://rpm.nodesource.com/setup_lts.x | bash
+
+- name: Installing NodeJS
+  ansible.builtin.yum:
+    name: nodejs
+    state: installed
+
+- name: App Pre-requisites
+  ansible.builtin.import_tasks:
+    file: pre-app-setup.yml
+
+- name: Installing Nodejs dependcies
+  ansible.builtin.shell: npm insall
+  args:
+    chdir: /app
+
+- name: systemd
+  ansible.builtin.import_tasks:
+    file: systemd.yml
+
+
+
