@@ -1,4 +1,3 @@
-
 - name: copying {{ component }} service
   ansible.builtin.template:
     src: "{{ component }}.service"
