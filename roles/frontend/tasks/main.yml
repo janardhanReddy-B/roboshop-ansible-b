@@ -32,10 +32,11 @@
     enabled: yes
 
 
-- name: copy module
-  hosts: app
-  tasks:
-    - name: file module
-      ansible.builtin.file:
-        path: /tmp/app.txt
-        mode: '744'
+
+#- name: copy module
+#  hosts: app
+#  tasks:
+#    - name: file module
+#      ansible.builtin.file:
+#        path: /tmp/app.txt
+#        mode: '744'
