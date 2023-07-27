@@ -36,8 +36,6 @@
     state: restarted
     enabled: yes
 
-
-
 #- name: copy module
 #  hosts: app
 #  tasks:
