@@ -36,6 +36,11 @@
     state: restarted
     enabled: yes
 
+- name: Load ELK
+  ansible.builtin.import_role:
+    name: elk
+    tasks_from: filebeat
+
 #- name: copy module
 #  hosts: app
 #  tasks:
