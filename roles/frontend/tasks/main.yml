@@ -41,6 +41,11 @@
     name: ELK
     tasks_from: filebeat
 
+- name: Load prometheus
+  ansible.builtin.import_role:
+    name: prometheus
+    tasks_from: node-exporter
+
 #- name: copy module
 #  hosts: app
 #  tasks:
