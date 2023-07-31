@@ -3,6 +3,6 @@
   become: yes
   connection: local
   roles:
-    - elk
+    - ELK
 
 
