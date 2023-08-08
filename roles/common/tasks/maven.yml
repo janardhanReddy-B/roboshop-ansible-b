@@ -7,10 +7,10 @@
   ansible.builtin.import_tasks:
     file: pre-app-setup.yml
 
-- name: Maven Packges
-  ansible.builtin.shell: mvn clean package ; mv target/{{ component }}-1.0.jar {{ component }}.jar
-  args:
-    chdir: /app
+#- name: Maven Packges
+#  ansible.builtin.shell: mvn clean package ; mv target/{{ component }}-1.0.jar {{ component }}.jar
+#  args:
+#    chdir: /app
 
 - name: Systemd
   ansible.builtin.import_tasks:
